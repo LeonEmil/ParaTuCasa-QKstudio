@@ -1,0 +1,389 @@
+        
+        
+
+        /* Estilos generales | General styles */
+        .contenedor-padre{
+            position: relative;
+        }
+        .verde-claro{
+            background-color: #5bc6aa;
+        }
+        .texto-verde-oscuro{
+            color: #1f544a;
+        }
+        .texto-verde-oscuro:hover{
+            color:white;
+        }
+        .texto-verde-claro{
+            color: #5bc6aa;
+        }
+        .margin-menu{
+            margin-left: 50%;
+        }
+        .texto-chico{
+            font-size: 12px;
+        }
+        .oscurecer{
+            filter: brightness(0.5);
+        }
+        .posicion-menu{
+            position: absolute;
+            z-index: 50;
+        }
+        .encabezado{
+            position: absolute;
+            z-index: 50;
+            padding-left: 30px;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            user-select: none;
+        }
+        @media screen and (max-width: 770px){
+            .derechos-reservados{
+                display: none;
+            }
+        }
+        /* Menu de navegacion | Navegation menu*/
+        .menu{
+            display: flex;
+            justify-content: flex-end;
+            align-items: baseline;
+            position: absolute;
+            z-index: 30;
+            margin-top: 20px;
+            width: 92%;
+            text-transform: uppercase;
+            color: white;
+        }
+        .Encabezado{
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        .lista-menu{
+            display: flex;
+        }
+        .elementos-lista-menu{
+            margin-right: 1em;
+        }
+        .enlaces-lista-menu{
+            color: white;
+            font-size: 0.8em;
+        }
+        .separador-menu-principal{
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+        .contenedor-icono-shop{
+            display: flex;
+        }
+        .icono-shop {
+            position: absolute;
+            top: 0;
+        }
+        .contador-compras{
+            z-index: 40;
+            margin-left: 12px;
+            color: white;
+        }
+        .menu-bar{
+            display: none;
+        }
+        @media screen and (max-width: 1020px){
+            .menu{
+                position: fixed;
+                display: inherit;
+                z-index: 50;
+                width: 80%;
+                height: 100%;
+                margin: 0;
+                top: 52px;
+                justify-content: start;
+                background: #1f544a;
+            }
+            .barra-verde{
+                position: fixed;
+                z-index: 50;
+                top: 0;
+            }
+            .lista-menu{
+                flex-direction: column;
+
+            }
+            .elementos-lista-menu{
+                margin-right: 0;
+                border-bottom: 1px solid rgba(255, 255, 255, .3)
+            }
+            .enlaces-lista-menu{
+                display: block;
+                padding: 20px;
+                font-size: 1em;
+            }
+            .span-menu,
+            .formulario-menu,
+            .separador-menu-principal,
+            .contenedor-icono-shop,
+            .contador-compras {
+                display: none;
+            }
+            .menu{
+                left: -100%;
+            }
+            .menu-bar{
+                display: block;
+                width: 100%;
+                background: #ccc;
+                margin-top: 51px;
+            }
+            .boton-menu{
+                display: block;
+                padding: 20px;
+                box-sizing: border-box;
+                font-size: 25px;
+                font-weight: bold;
+                text-decoration: none;
+                color: white;
+                background: #1f544a;
+            }
+            .menu-bar span{
+                float: right;
+                font-size: 40px;
+            }
+        }
+
+        /* Contenedores flotantes sobre el slider | Floating containers on the slider */
+        .contenedor-flotante{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            z-index: 40;
+            margin-top: 100px;
+            width: 90%;
+            height: 40%;
+        }
+        .contenedor-outlet{
+            display: flex;
+            flex-direction: column;
+            width: 34.2%;
+            height: 25.9%;
+            margin-bottom: 1em;
+            background-color: #5bc6aa;
+        }
+        .contenedor-outlet button{
+            width: 160px;
+        }
+        .contenedor-outlet img{
+            justify-self: center;
+            align-self: flex-end;
+            position: absolute;
+            width: 17.1%;
+            height: 25.9%;
+        }
+        .contenedor-placas{
+            display: flex;
+            flex-direction: column;
+            width: 34.2%;
+            height: 27%;
+            background-color: #2d2d2d;
+        }
+        .contenedor-placas img{
+            justify-self: flex-start;
+            position: absolute;
+            width: 17.1%;
+            height: 27%;
+        }
+        .contenedor-placas button{
+            align-self: flex-end;
+            margin-right: 2em;
+        }
+        .btn-green{
+            color:#fff;
+            background-color: #5bc6aa;
+            border-color:#5bc6aa;
+        }
+        .btn-green:hover{
+            color:#fff;
+            background-color: #4eac93;
+            border-color:#4eac93;
+        }
+        @media screen and (max-width: 1530px){
+            .contenedor-placas{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 1240px){
+            .contenedor-outlet{
+                display: none;
+            }
+        }
+        
+        /* Slideshow */
+        .carousel-caption{
+            position:absolute;
+            right:55%;
+            bottom:27%;
+            left:15%;
+            z-index:10;
+            padding-top:20px;
+            padding-bottom:20px;
+            color:#fff;
+            font-size: 1.7em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align:left;
+        }
+        @media screen and (max-width: 800px){
+            .carousel-caption{
+            font-size: 1em;
+            bottom:10%;
+            }
+        }
+        .carousel-indicators li {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: #5bc6aa;
+        }
+        .borde-inferior-verde{
+            border-bottom: #5bc6aa 5px solid;
+        }
+
+        /* Mensaje debajo del slider | Message below the slider */
+        .fondo-negro{
+            background: #2d2d2d;
+        }
+
+        /* Seccion nuestros productos | Section our products*/
+        .fondo-nuestros-productos{
+            background-image: url(img/productos-fondo.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .titulo-pisos-de-madera{
+            position: absolute;
+            margin-top: 23%;
+            margin-left: 30px;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .texto-pisos-de-madera{
+            position: absolute;
+            margin-top: 33%;
+            margin-left: 30px;
+            max-width: 370px;
+            color: white;
+        }
+        .boton-ver-productos{
+            position: absolute;
+            background-color: #5bc6aa;
+            color: #2d2d2d;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 3px;
+            padding: 0.4em;
+            margin-top: 70%;
+            margin-left: 30px;
+        }
+        .titulo-placas{
+            position:absolute;
+            margin-top: 5%;
+            margin-left: 30px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .texto-placas{
+            position:absolute;
+            margin-top: 12%;
+            margin-left: 30px;
+            max-width: 40%;
+            font-size: 0.8rem;
+        }
+        .boton-ver-placas{
+            position: absolute;
+            margin-top: 33%;
+            margin-left: 30px;
+            padding: 0.4em;
+            background-color: #2d2d2d;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+        .titulo-pisos-flotantes{
+            position:absolute;
+            margin-top: 40px;
+            margin-left: 50%;
+            max-width: 160px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: end;
+        }
+        .texto-pisos-flotantes{
+            position:absolute;
+            margin-top: 110px;
+            margin-left: 50%;
+            max-width: 160px;
+            font-size: 0.8rem;
+            text-align: end;
+        }
+        .boton-pisos-flotantes{
+            position: absolute;
+            float: right;
+            padding: 0.4em;
+            border-radius: 3px;
+            margin-top: 155px;
+            margin-left: 54%;
+            background-color: #1f544a;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: end;
+        }
+
+        /* Seccion outlet | Section outlet*/
+        .fondo-oulet{
+            background-image: url(img/fondo-oulet.jpg);
+        }
+        .titulo-oulet{
+            background: #2d2d2d;
+            border-radius: 3px;
+            padding-left: 40px;
+            padding-right: 40px;
+            display: inline;
+        }
+        .posicion-icono-oferta{
+            position: absolute;
+            margin-left: -67px;
+        }
+        .boton-chequealos{
+            background: #5bc6aa;
+            border-radius: 3px;
+            padding: 7px;
+            display: inline;
+        }
+        .recuadro-articulos{
+            width: 225px;
+        }
+        .oferta-destacada{
+            position: absolute;
+            margin-top: -179px;
+            margin-left: -10px;
+        }
+        .precio-articulo{
+            color: red;
+        }
+        .precio-tachado{
+            color: gray;
+            text-decoration-line: line-through;
+        }
+        .letra-chica{
+            font-size: 1.2em;
+        }
+        .letra-chiquita{
+            font-size: 1em;
+        }
+
+        
